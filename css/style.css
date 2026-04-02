@@ -5,14 +5,17 @@
 }
 
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --secondary: #10b981;
-  --dark: #1e293b;
-  --gray: #64748b;
-  --light: #f1f5f9;
-  --white: #ffffff;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --primary: #60a5fa;
+  --primary-dark: #2563eb;
+  --secondary: #22d3ee;
+  --dark: #f8fafc;
+  --gray: #94a3b8;
+  --light: #e2e8f0;
+  --white: #f8fafc;
+  --surface: #0f172a;
+  --surface-alt: #111827;
+  --bg: #030712;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -20,6 +23,7 @@ body {
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
+  background: linear-gradient(180deg, #020617 0%, #071123 100%);
 }
 
 .container {
@@ -62,12 +66,12 @@ ul {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--white);
+  border: 2px solid rgba(248, 250, 252, 0.55);
   color: var(--white);
 }
 
 .btn-outline:hover {
-  background: var(--white);
+  background: rgba(248, 250, 252, 0.12);
   color: var(--primary);
 }
 
@@ -113,9 +117,9 @@ ul {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -136,11 +140,12 @@ ul {
   gap: 10px;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--light);
 }
 
 .logo i {
   font-size: 1.8rem;
+  color: var(--primary);
 }
 
 .nav-menu {
@@ -150,7 +155,7 @@ ul {
 
 .nav-menu a {
   font-weight: 500;
-  color: var(--dark);
+  color: var(--light);
   transition: color 0.3s;
   position: relative;
 }
@@ -189,7 +194,7 @@ ul {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background: var(--dark);
+  background: var(--light);
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -211,7 +216,7 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #111827 45%, #1e293b 100%);
   padding: 120px 0 80px;
   overflow: hidden;
 }
@@ -284,7 +289,7 @@ ul {
 .shape-1 {
   width: 400px;
   height: 400px;
-  background: var(--white);
+  background: rgba(248, 250, 252, 0.08);
   top: -100px;
   right: -100px;
   animation: float 8s ease-in-out infinite;
@@ -320,7 +325,7 @@ ul {
 
 .features {
   padding: 100px 0;
-  background: var(--light);
+  background: var(--surface-alt);
 }
 
 .features-grid {
@@ -330,7 +335,7 @@ ul {
 }
 
 .feature-card {
-  background: var(--white);
+  background: var(--surface);
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
@@ -378,7 +383,7 @@ ul {
 }
 
 .course-card {
-  background: var(--white);
+  background: var(--surface);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -486,7 +491,7 @@ ul {
   gap: 10px;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
 }
 
 .course-instructor img {
@@ -522,7 +527,7 @@ ul {
 
 .about {
   padding: 100px 0;
-  background: var(--light);
+  background: var(--surface-alt);
 }
 
 .about-grid {
@@ -616,7 +621,7 @@ ul {
 }
 
 .teacher-card {
-  background: var(--white);
+  background: var(--surface);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -719,7 +724,7 @@ ul {
 
 .testimonial-card {
   flex: 0 0 calc(33.333% - 20px);
-  background: var(--white);
+  background: var(--surface);
   border-radius: 20px;
   padding: 40px;
 }
@@ -739,7 +744,7 @@ ul {
 .testimonial-content p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--dark);
+  color: var(--light);
   margin-bottom: 25px;
 }
 
@@ -785,13 +790,13 @@ ul {
 }
 
 .slider-btn:hover {
-  background: var(--white);
+  background: rgba(248, 250, 252, 0.2);
   color: var(--primary);
 }
 
 .register {
   padding: 100px 0;
-  background: var(--light);
+  background: var(--surface-alt);
 }
 
 .register-grid {
@@ -856,7 +861,7 @@ ul {
 }
 
 .register-form {
-  background: var(--white);
+  background: var(--surface);
   padding: 40px;
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -885,7 +890,7 @@ ul {
   display: block;
   font-weight: 500;
   margin-bottom: 8px;
-  color: var(--dark);
+  color: var(--light);
 }
 
 .form-group input,
@@ -893,11 +898,13 @@ ul {
 .form-group textarea {
   width: 100%;
   padding: 14px 14px 14px 45px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(148, 163, 184, 0.18);
   border-radius: 10px;
   font-size: 1rem;
   font-family: inherit;
   transition: border-color 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--light);
 }
 
 .form-group input:focus,
@@ -982,7 +989,7 @@ ul {
 .social-links a {
   width: 50px;
   height: 50px;
-  background: var(--light);
+  background: var(--surface);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -999,7 +1006,7 @@ ul {
 }
 
 .contact-form {
-  background: var(--white);
+  background: var(--surface);
   padding: 40px;
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -1129,7 +1136,7 @@ ul {
 }
 
 .modal-content {
-  background: var(--white);
+  background: var(--surface);
   padding: 50px;
   border-radius: 20px;
   text-align: center;
@@ -1221,7 +1228,7 @@ ul {
     left: 0;
     right: 0;
     width: 100%;
-    background: var(--white);
+    background: var(--surface);
     flex-direction: column;
     padding: 18px 20px;
     gap: 0;
@@ -1247,8 +1254,8 @@ ul {
   .nav-menu li a {
     display: block;
     padding: 15px 0;
-    border-bottom: 1px solid #e2e8f0;
-    color: var(--dark);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    color: var(--light);
   }
 
   .navbar .btn {
